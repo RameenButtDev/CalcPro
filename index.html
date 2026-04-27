@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/14.8.1/math.js"></script>
+  </head>
+  <body>
+    <section
+      class="bg-sky-300 flex justify-center items-center p-4 min-h-screen"
+    >
+      <div
+        class="flex flex-col j w-96 gap-y-6 bg-white shadow-lg py-6 px-4 rounded-lg"
+      >
+        <input
+          id="display"
+          type="text"
+          readonly
+          class="px-3 py-2 text-lg focus:ouline-none"
+        />
+        <div class="grid grid-cols-4 gap-4">
+          <button
+            id="clear"
+            type="button"
+            class="rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            C
+          </button>
+          <button
+            id="backspace"
+            type="button"
+            class="rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            B
+          </button>
+          <button
+            value="%"
+            type="button"
+            class="calciBIN rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            %
+          </button>
+          <button
+            value="/"
+            type="button"
+            class="calciBIN rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            /
+          </button>
+          <button
+            value="7"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            7
+          </button>
+          <button
+            value="8"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            8
+          </button>
+          <button
+            value="9"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            9
+          </button>
+          <button
+            value="*"
+            type="button"
+            class="calciBIN rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            *
+          </button>
+          <button
+            value="4"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            4
+          </button>
+          <button
+            value="5"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            5
+          </button>
+          <button
+            value="6"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            6
+          </button>
+          <button
+            value="-"
+            type="button"
+            class="calciBIN rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            -
+          </button>
+          <button
+            value="1"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            1
+          </button>
+          <button
+            value="2"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            2
+          </button>
+          <button
+            value="3"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            3
+          </button>
+          <button
+            value="+"
+            type="button"
+            class="calciBIN rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            +
+          </button>
+          <button
+            value="0"
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            0
+          </button>
+          <button
+            value="."
+            type="button"
+            class="calciBIN rounded-full bg-sky-100 py-2 shadow-lg hover:shadow-inner"
+          >
+            .
+          </button>
+          <button
+            id="equalTo"
+            type="button"
+            class="calciBIN col-span-2 rounded-full bg-sky-300 py-2 shadow-lg hover:shadow-inner"
+          >
+            =
+          </button>
+        </div>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
